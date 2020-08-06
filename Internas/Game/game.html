@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylegame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Master Math - Uriel Belo</title>
+</head>
+<body>
+    <header><h1>Master Math</h1></header>
+    <div class="Corpo">
+        <div class="Quadro">
+            <h2 id="Diciplina">Equação de Primeiro Grau</h2>
+             <div class="Conteudo" id="Conter">
+                <div class="CorpoMath">
+                    <div class="Conta" id="Conta">
+                     0Y + 0 = 0</br>
+                    </div>
+                    <i>Qual o Valor de Y?</i></br>
+                    <input type="text" id="ValorUsuario">
+                    <button onclick="Validar()" class="ButA">Validar</button>
+                    <button onclick="Pular()" class="ButB">Não sei</button>
+                </div>
+             </div>
+        </div>
+        <div>
+            <div class="Cronometro">
+                <p id="Tempo"><span class="Hora"><a href="script.js">Visitar o código (Beta)</a></span></p>
+               </div>
+                   <div class="Resultado">
+                       <h1 id="Placar">0/5</h1>
+                       <p id="Resposta">Bem-vindo ao Master Math!</br>Todas as equações são geradas aleatoriamente.</br> (Ainda existem erros de execução)</p>
+                      <button class="Comecar" onclick="start_button()" id="botao">Começar</button>
+                      <a href="../../index.html"><button class="Voltar">Voltar</button></a>
+                   </div>
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>

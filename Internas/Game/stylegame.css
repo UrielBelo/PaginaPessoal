@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    background-image: linear-gradient( to right, gray, lightgray, gray);
+    font-family: 'Comfortaa', cursive;
+}
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+    font-size: 6vw;
+    padding: 0px;
+    margin: 0px;
+}
+.Corpo {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+.Quadro h2 {
+    border-bottom: 2px black solid;
+    padding: 0px;
+    margin: 0px;
+    background-color: yellow;
+}
+.Quadro {
+    border: 2px black solid;
+}
+.Cronometro {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+}
+.Cronometro p{
+    font-size: 1vw;
+    padding: 0px;
+    margin: 0px;
+    background-color: aquamarine;
+}
+.Resultado {
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+}
+.Resultado h1{
+    font-size: 4vw;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2vw;
+}
+.Resultado p{
+    font-size: 1.8vw;
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+}
+.Comecar {
+    background-color: limegreen;
+    color: darkgreen;
+}
+.Voltar {
+    background-color: aquamarine;
+    color: midnightblue;
+}
+.Resultado button {
+    margin: 1vh;
+    box-sizing: border-box;
+    width: 45%;
+    height: 10vh;
+    font-size: 2vw;
+    border-radius: 60px;
+}
+.Resultado button:hover {
+    box-shadow: white 0px 0px 10px;
+}
+.Conteudo {
+    width: 55%;
+    height: 75%;
+}
+.CorpoMath {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    font-size: 2vw;
+}
+.Conta {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px black dashed;
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+.ButA {
+    background-color: lime;
+}
+.ButB {
+    background-color: salmon;
+}

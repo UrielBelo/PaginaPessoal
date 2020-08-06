@@ -1,0 +1,15 @@
+body {
+    background-image: linear-gradient( to right, black, #212121, black);
+    text-align: center;
+}
+iframe {
+    border: whitesmoke 3px solid;
+}
+iframe:hover {
+    box-shadow: yellow 0px 0px 20px
+}
+a {
+    margin-top: 7vh;
+    font-size: 2vw;
+    color: white;
+}

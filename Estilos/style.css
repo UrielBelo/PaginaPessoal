@@ -1,0 +1,259 @@
+body {
+ text-align: center;
+ align-items: center;
+ align-content: center;
+ font-family: 'Raleway', sans-serif;
+ background-color: cyan;
+ background-image: url(../Recursos/background.jpg);
+ background-size: 100vw;
+}
+.nomePrincipal {
+ font-family: 'Monoton', cursive;
+ font-size: 7vw;
+ margin: 0.2vw;
+ color: lightcyan;
+ animation: linear 2s MudarPrincipal;
+ padding-top: 2vh;
+}
+
+@keyframes MudarPrincipal {
+
+    0% {
+      
+     color: midnightblue;
+     transform: scale(0.4);
+
+    }
+ 
+    100% {
+
+     color: lightcyan;
+     transform: scale(1);
+
+    }
+}
+
+.NavegationList {
+ list-style: none;
+ background-color: darkblue;
+ border: 2px white solid;
+ font-family: 'Fredoka One', cursive;
+ padding: 0px;
+ margin: 0px;
+ position: fixed;
+ width: 98vw;
+ text-align: center;
+ z-index: 1;
+}
+.NavegationList a li {
+ color: royalblue;
+ display: inline;
+}
+.NavegationList a {
+ padding: 0.4vh 1vw;
+ display: inline-block;
+}
+a {
+ text-decoration: none; 
+}
+a:active,
+a:hover {
+ color: lawngreen;
+ border-bottom: 2px dashed red;
+}
+.Subtitulo {
+ font-family:'Press Start 2P', cursive;
+ font-size: 1vw;
+ color: whitesmoke;
+}
+.Subtitulo a {
+ color: lightseagreen;
+}
+.FotoDePerfil {
+ height: 50vh;
+ border: 2px white dashed;
+ align-items: flex-start;
+}
+.Logotipo {
+ align-content: flex-start;
+}
+.Caracteristicas li,
+a {
+ color: whitesmoke;
+ font-family: 'Nova Mono', monospace;
+ list-style: none;
+ text-align: center;
+ font-size: 2.1vh;
+}
+.CorpoPrincipal {
+ background-color: transparent;
+ width: 97.5vW;
+}
+.Home,
+header {
+ text-align: center;
+ align-items: center;
+ align-content: center;
+}
+@media(min-width: 200px) {
+ body {
+  background-size: 200vh;
+ }
+ .Caracteristicas li,
+ a {
+  font-size: 2.2vh;
+ }
+ .NavegationList a li {
+  font-size: 2.5vh;
+ }
+ .FotoDePerfil {
+  margin-bottom: 10.2vh;
+ }
+}
+@media(min-width: 1000px) {
+    body {
+     background-size: 200vh;
+    }
+    .Caracteristicas li,
+    a {
+     font-size: 2.2vh;
+    }
+    .NavegationList a li {
+     font-size: 3vh;
+    }
+    .FotoDePerfil {
+     margin-bottom: 0.5vh;
+    }
+    .Sobre p{
+     padding-left: 30vw;
+     padding-right: 30vw;
+    }
+   }
+
+.Contato p,
+.Sobre p{
+ color: linen;
+ font-size: 3vh;
+}
+.Projetos h2,
+.Contato h2,
+.Sobre h2 {
+ color: mediumaquamarine;
+ font-size: 4vw;
+ font-family: 'Monoton', cursive;
+}
+.inteiro {
+ background-image: linear-gradient( to right, transparent, transparent, blue,royalblue, blue, transparent, transparent);
+}
+ .TextoHab {
+ color: mediumaquamarine;
+ font-size: 6vw;
+ font-family: 'Major Mono Display', monospace;
+ margin-bottom: 3vh;
+}
+.Sobre li {
+ list-style: none;
+ font-size: 5vw;
+ color: rgb(193, 235, 5);
+ margin-top: 1.6vw;
+}
+.Projetos img {
+ margin: 0.5vw;
+ border: 4px yellow dashed;
+ border-radius: 210px;
+ opacity: 0.4;
+ width: 25vw;
+ height: 25vw;
+ transform: translateY(5vh) scale(.8);
+}
+.Projetos img:active,
+.Projetos img:hover {
+ border: 4px red solid;
+ filter: grayscale(50%);
+}
+.Projetos:active img,
+.Projetos:hover img{
+ animation: linear 300ms TransformarImagens forwards;
+}
+.Projetos a{
+ text-decoration: none;
+ border-bottom: none;
+}
+
+@keyframes TransformarImagens {
+
+    0% {
+     opacity: 0.4;
+     transform: translateY(5vh) scale(.8);
+    }
+
+    100% {
+     opacity: 1;
+     transform: translateY(0) scale(1);
+    }
+    
+}
+
+.grid {
+ display: grid;
+ gap: 2vw;
+}
+@media(min-width: 300px) {
+    .nomePrincipal {
+        padding-top: 10vh;
+     }
+    .Projetos img {
+        width: 50vw;
+        height: 50vw;
+    }
+    .TextoHab {
+        font-size: 5vw;
+    }
+    .Sobre li {
+        font-size: 4vw;
+    }
+ }
+
+@media(min-width: 600px) {
+    .grid{
+       grid-template-columns: 45vw 45vw;
+    }
+    .Projetos img {
+        width: 35vw;
+        height: 35vw;
+    }
+    .TextoHab {
+        font-size: 3vw;
+    }
+    .Sobre li {
+        font-size: 3vw;
+    }
+ }
+
+ @media(min-width: 1000px) {
+    .grid{
+        grid-template-columns: 30vw 30vw 30vw; 
+    }
+    .Projetos img {
+        width: 25vw;
+        height: 25vw;
+    }
+    .TextoHab {
+        font-size: 2vw;
+    }
+    .Sobre li {
+        font-size: 2vw;
+    }
+ }
+
+ .Projetos figcaption {
+     color: white;
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.4vw;
+ }
+ .Texto p a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vh;
+    color: purple;
+    -webkit-text-stroke: white 2px;
+ }
